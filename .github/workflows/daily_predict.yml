@@ -1,0 +1,42 @@
+name: Daily Weather Prediction
+
+on:
+  schedule:
+    # Runs every day at 06:00 UTC. Adjust to your timezone as needed.
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}   # allows manual trigger from the Actions tab
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run prediction
+        working-directory: src
+        run: python predict_today.py --models-dir ../models | tee ../prediction_log.txt
+
+      - name: Append to history log
+        run: |
+          echo "$(date -u +'%Y-%m-%d %H:%M UTC')" >> logs/predictions.log
+          cat prediction_log.txt >> logs/predictions.log
+          echo "---" >> logs/predictions.log
+
+      - name: Commit updated log
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add logs/predictions.log
+          git diff --staged --quiet || git commit -m "Daily prediction: $(date -u +'%Y-%m-%d')"
+          git push
