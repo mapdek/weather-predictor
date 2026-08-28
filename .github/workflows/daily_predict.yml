@@ -2,8 +2,8 @@ name: Daily Weather Prediction
 
 on:
   schedule:
-    # Runs every day at 06:00 UTC. Adjust to your timezone as needed.
-    - cron: "0 6 * * *"
+    # Runs every day at 08:30 UTC. Adjust to your timezone as needed.
+    - cron: "30 8 * * 1-5"
   workflow_dispatch: {}   # allows manual trigger from the Actions tab
 
 jobs:
