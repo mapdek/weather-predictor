@@ -140,6 +140,40 @@ If your org has restricted default token permissions, go to
 **Settings → Actions → General → Workflow permissions** and select
 "Read and write permissions."
 
+## Tracing an individual tree
+
+The forest is 300 trees, which is too many to inspect by eye — but you can
+pull out any single one and see exactly what it learned, both as text and
+as a diagram:
+
+```bash
+cd src
+python export_tree.py --model ../models/temp_model.joblib --tree-index 0 --max-depth 3
+```
+
+This writes two files to `logs/`:
+- `tree_trace_0.txt` — the actual yes/no questions that tree learned (e.g.
+  "is the day-of-year signal below X? then check yesterday's wind speed...")
+- `tree_trace_0.png` — the same thing as a visual diagram
+
+Use `--tree-index` (0 to 299) to look at a different tree, and `--max-depth`
+to show more or fewer levels (trees get very wide past depth 4-5).
+
+## A second kind of trace: model history over time
+
+Because `weekly_retrain.yml` commits `models/*.joblib` back to the repo every
+week, your git history is itself a timeline of every version of the forest
+that has ever existed. To see how the model has changed over time:
+
+```bash
+git log --oneline -- models/
+```
+
+Each commit there is a fully working snapshot of the model as it existed
+that week — you can check out any past commit and load that exact forest
+with `joblib.load()` if you ever want to compare an old model's behavior
+to the current one.
+
 ## Extending this
 
 - **Better models**: try gradient boosting (XGBoost/LightGBM) or a small
