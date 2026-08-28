@@ -1,49 +1,511 @@
 Tree #0 of 300 in the forest
-(showing top 3 levels; full tree is deeper)
+(showing top 8 levels; full tree is deeper)
 
 |--- temperature_2m_max_lag1 <= 15.85
 |   |--- temperature_2m_max_lag1 <= 8.15
 |   |   |--- temperature_2m_max_lag1 <= 2.25
 |   |   |   |--- relative_humidity_2m_mean_lag1 <= 70.50
-|   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |--- doy_cos <= 0.99
+|   |   |   |   |   |--- value: [0.50]
+|   |   |   |   |--- doy_cos >  0.99
+|   |   |   |   |   |--- value: [-1.40]
 |   |   |   |--- relative_humidity_2m_mean_lag1 >  70.50
-|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- temperature_2m_min_lag2 <= -4.55
+|   |   |   |   |   |--- value: [8.40]
+|   |   |   |   |--- temperature_2m_min_lag2 >  -4.55
+|   |   |   |   |   |--- temp_max_trend <= -0.70
+|   |   |   |   |   |   |--- temperature_2m_min_lag2 <= 0.05
+|   |   |   |   |   |   |   |--- doy_cos <= 0.96
+|   |   |   |   |   |   |   |   |--- value: [0.90]
+|   |   |   |   |   |   |   |--- doy_cos >  0.96
+|   |   |   |   |   |   |   |   |--- value: [0.25]
+|   |   |   |   |   |   |--- temperature_2m_min_lag2 >  0.05
+|   |   |   |   |   |   |   |--- value: [3.50]
+|   |   |   |   |   |--- temp_max_trend >  -0.70
+|   |   |   |   |   |   |--- windspeed_10m_max_lag2 <= 11.80
+|   |   |   |   |   |   |   |--- temp_max_trend <= 0.50
+|   |   |   |   |   |   |   |   |--- value: [4.38]
+|   |   |   |   |   |   |   |--- temp_max_trend >  0.50
+|   |   |   |   |   |   |   |   |--- value: [3.30]
+|   |   |   |   |   |   |--- windspeed_10m_max_lag2 >  11.80
+|   |   |   |   |   |   |   |--- relative_humidity_2m_mean_lag3 <= 75.50
+|   |   |   |   |   |   |   |   |--- value: [1.80]
+|   |   |   |   |   |   |   |--- relative_humidity_2m_mean_lag3 >  75.50
+|   |   |   |   |   |   |   |   |--- value: [2.50]
 |   |   |--- temperature_2m_max_lag1 >  2.25
 |   |   |   |--- windspeed_10m_max_lag1 <= 9.45
-|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- windspeed_10m_max_lag2 <= 12.00
+|   |   |   |   |   |--- windspeed_10m_max_lag1 <= 8.90
+|   |   |   |   |   |   |--- temperature_2m_max_lag3 <= 5.20
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag3 <= 1031.25
+|   |   |   |   |   |   |   |   |--- value: [5.55]
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag3 >  1031.25
+|   |   |   |   |   |   |   |   |--- value: [5.30]
+|   |   |   |   |   |   |--- temperature_2m_max_lag3 >  5.20
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag2 <= 5.00
+|   |   |   |   |   |   |   |   |--- value: [5.02]
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag2 >  5.00
+|   |   |   |   |   |   |   |   |--- value: [4.50]
+|   |   |   |   |   |--- windspeed_10m_max_lag1 >  8.90
+|   |   |   |   |   |   |--- pressure_trend <= 0.60
+|   |   |   |   |   |   |   |--- value: [3.80]
+|   |   |   |   |   |   |--- pressure_trend >  0.60
+|   |   |   |   |   |   |   |--- value: [2.60]
+|   |   |   |   |--- windspeed_10m_max_lag2 >  12.00
+|   |   |   |   |   |--- surface_pressure_mean_lag1 <= 1015.30
+|   |   |   |   |   |   |--- value: [-0.50]
+|   |   |   |   |   |--- surface_pressure_mean_lag1 >  1015.30
+|   |   |   |   |   |   |--- windspeed_10m_max_lag3 <= 16.20
+|   |   |   |   |   |   |   |--- value: [2.20]
+|   |   |   |   |   |   |--- windspeed_10m_max_lag3 >  16.20
+|   |   |   |   |   |   |   |--- value: [2.30]
 |   |   |   |--- windspeed_10m_max_lag1 >  9.45
-|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- temperature_2m_max_lag1 <= 2.60
+|   |   |   |   |   |--- windspeed_10m_max_lag1 <= 17.55
+|   |   |   |   |   |   |--- value: [12.20]
+|   |   |   |   |   |--- windspeed_10m_max_lag1 >  17.55
+|   |   |   |   |   |   |--- value: [10.10]
+|   |   |   |   |--- temperature_2m_max_lag1 >  2.60
+|   |   |   |   |   |--- temperature_2m_max_lag1 <= 5.50
+|   |   |   |   |   |   |--- temperature_2m_max_lag2 <= 2.15
+|   |   |   |   |   |   |   |--- value: [11.80]
+|   |   |   |   |   |   |--- temperature_2m_max_lag2 >  2.15
+|   |   |   |   |   |   |   |--- relative_humidity_2m_mean_lag1 <= 92.50
+|   |   |   |   |   |   |   |   |--- value: [4.40]
+|   |   |   |   |   |   |   |--- relative_humidity_2m_mean_lag1 >  92.50
+|   |   |   |   |   |   |   |   |--- value: [8.37]
+|   |   |   |   |   |--- temperature_2m_max_lag1 >  5.50
+|   |   |   |   |   |   |--- pressure_trend <= -5.20
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag1 <= 6.80
+|   |   |   |   |   |   |   |   |--- value: [3.70]
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag1 >  6.80
+|   |   |   |   |   |   |   |   |--- value: [4.50]
+|   |   |   |   |   |   |--- pressure_trend >  -5.20
+|   |   |   |   |   |   |   |--- temperature_2m_min_lag2 <= 3.70
+|   |   |   |   |   |   |   |   |--- value: [8.54]
+|   |   |   |   |   |   |   |--- temperature_2m_min_lag2 >  3.70
+|   |   |   |   |   |   |   |   |--- value: [6.28]
 |   |--- temperature_2m_max_lag1 >  8.15
 |   |   |--- temperature_2m_max_lag1 <= 12.85
 |   |   |   |--- temperature_2m_min_lag1 <= 4.05
-|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- doy_sin <= 0.46
+|   |   |   |   |   |--- windspeed_10m_max_lag2 <= 24.10
+|   |   |   |   |   |   |--- relative_humidity_2m_mean_lag3 <= 80.50
+|   |   |   |   |   |   |   |--- windspeed_10m_max_lag2 <= 21.45
+|   |   |   |   |   |   |   |   |--- value: [12.40]
+|   |   |   |   |   |   |   |--- windspeed_10m_max_lag2 >  21.45
+|   |   |   |   |   |   |   |   |--- value: [10.90]
+|   |   |   |   |   |   |--- relative_humidity_2m_mean_lag3 >  80.50
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag2 <= 9.00
+|   |   |   |   |   |   |   |   |--- value: [9.37]
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag2 >  9.00
+|   |   |   |   |   |   |   |   |--- value: [7.72]
+|   |   |   |   |   |--- windspeed_10m_max_lag2 >  24.10
+|   |   |   |   |   |   |--- windspeed_10m_max_lag3 <= 27.15
+|   |   |   |   |   |   |   |--- relative_humidity_2m_mean_lag3 <= 83.00
+|   |   |   |   |   |   |   |   |--- value: [5.40]
+|   |   |   |   |   |   |   |--- relative_humidity_2m_mean_lag3 >  83.00
+|   |   |   |   |   |   |   |   |--- value: [4.25]
+|   |   |   |   |   |   |--- windspeed_10m_max_lag3 >  27.15
+|   |   |   |   |   |   |   |--- value: [7.60]
+|   |   |   |   |--- doy_sin >  0.46
+|   |   |   |   |   |--- precipitation_sum_lag3 <= 1.25
+|   |   |   |   |   |   |--- relative_humidity_2m_mean_lag2 <= 85.00
+|   |   |   |   |   |   |   |--- pressure_trend <= -1.00
+|   |   |   |   |   |   |   |   |--- value: [13.15]
+|   |   |   |   |   |   |   |--- pressure_trend >  -1.00
+|   |   |   |   |   |   |   |   |--- value: [11.96]
+|   |   |   |   |   |   |--- relative_humidity_2m_mean_lag2 >  85.00
+|   |   |   |   |   |   |   |--- pressure_trend <= -4.65
+|   |   |   |   |   |   |   |   |--- value: [8.70]
+|   |   |   |   |   |   |   |--- pressure_trend >  -4.65
+|   |   |   |   |   |   |   |   |--- value: [11.10]
+|   |   |   |   |   |--- precipitation_sum_lag3 >  1.25
+|   |   |   |   |   |   |--- temp_max_trend <= -0.35
+|   |   |   |   |   |   |   |--- doy_cos <= 0.52
+|   |   |   |   |   |   |   |   |--- value: [7.40]
+|   |   |   |   |   |   |   |--- doy_cos >  0.52
+|   |   |   |   |   |   |   |   |--- value: [8.93]
+|   |   |   |   |   |   |--- temp_max_trend >  -0.35
+|   |   |   |   |   |   |   |--- doy_cos <= 0.72
+|   |   |   |   |   |   |   |   |--- value: [10.37]
+|   |   |   |   |   |   |   |--- doy_cos >  0.72
+|   |   |   |   |   |   |   |   |--- value: [12.70]
 |   |   |   |--- temperature_2m_min_lag1 >  4.05
-|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- temp_max_trend <= -2.10
+|   |   |   |   |   |--- pressure_trend <= -0.40
+|   |   |   |   |   |   |--- relative_humidity_2m_mean_lag3 <= 88.50
+|   |   |   |   |   |   |   |--- relative_humidity_2m_mean_lag1 <= 91.50
+|   |   |   |   |   |   |   |   |--- value: [12.02]
+|   |   |   |   |   |   |   |--- relative_humidity_2m_mean_lag1 >  91.50
+|   |   |   |   |   |   |   |   |--- value: [11.02]
+|   |   |   |   |   |   |--- relative_humidity_2m_mean_lag3 >  88.50
+|   |   |   |   |   |   |   |--- temperature_2m_min_lag3 <= 8.90
+|   |   |   |   |   |   |   |   |--- value: [13.70]
+|   |   |   |   |   |   |   |--- temperature_2m_min_lag3 >  8.90
+|   |   |   |   |   |   |   |   |--- value: [12.60]
+|   |   |   |   |   |--- pressure_trend >  -0.40
+|   |   |   |   |   |   |--- pressure_trend <= 10.00
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag3 <= 15.00
+|   |   |   |   |   |   |   |   |--- value: [14.52]
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag3 >  15.00
+|   |   |   |   |   |   |   |   |--- value: [15.87]
+|   |   |   |   |   |   |--- pressure_trend >  10.00
+|   |   |   |   |   |   |   |--- precipitation_sum_lag3 <= 1.35
+|   |   |   |   |   |   |   |   |--- value: [13.40]
+|   |   |   |   |   |   |   |--- precipitation_sum_lag3 >  1.35
+|   |   |   |   |   |   |   |   |--- value: [12.85]
+|   |   |   |   |--- temp_max_trend >  -2.10
+|   |   |   |   |   |--- temp_max_trend <= 2.80
+|   |   |   |   |   |   |--- relative_humidity_2m_mean_lag2 <= 87.50
+|   |   |   |   |   |   |   |--- temp_max_trend <= -1.45
+|   |   |   |   |   |   |   |   |--- value: [9.12]
+|   |   |   |   |   |   |   |--- temp_max_trend >  -1.45
+|   |   |   |   |   |   |   |   |--- value: [11.48]
+|   |   |   |   |   |   |--- relative_humidity_2m_mean_lag2 >  87.50
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag1 <= 8.95
+|   |   |   |   |   |   |   |   |--- value: [12.80]
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag1 >  8.95
+|   |   |   |   |   |   |   |   |--- value: [8.95]
+|   |   |   |   |   |--- temp_max_trend >  2.80
+|   |   |   |   |   |   |--- doy_sin <= -0.11
+|   |   |   |   |   |   |   |--- temperature_2m_min_lag2 <= 0.85
+|   |   |   |   |   |   |   |   |--- value: [14.90]
+|   |   |   |   |   |   |   |--- temperature_2m_min_lag2 >  0.85
+|   |   |   |   |   |   |   |   |--- value: [13.72]
+|   |   |   |   |   |   |--- doy_sin >  -0.11
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag2 <= 1024.35
+|   |   |   |   |   |   |   |   |--- value: [12.20]
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag2 >  1024.35
+|   |   |   |   |   |   |   |   |--- value: [9.70]
 |   |   |--- temperature_2m_max_lag1 >  12.85
 |   |   |   |--- temperature_2m_max_lag1 <= 14.35
-|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- windspeed_10m_max_lag2 <= 21.65
+|   |   |   |   |   |--- relative_humidity_2m_mean_lag1 <= 82.50
+|   |   |   |   |   |   |--- relative_humidity_2m_mean_lag3 <= 70.50
+|   |   |   |   |   |   |   |--- value: [14.20]
+|   |   |   |   |   |   |--- relative_humidity_2m_mean_lag3 >  70.50
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag2 <= 1015.20
+|   |   |   |   |   |   |   |   |--- value: [15.42]
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag2 >  1015.20
+|   |   |   |   |   |   |   |   |--- value: [16.08]
+|   |   |   |   |   |--- relative_humidity_2m_mean_lag1 >  82.50
+|   |   |   |   |   |   |--- temperature_2m_max_lag3 <= 12.20
+|   |   |   |   |   |   |   |--- doy_cos <= 0.84
+|   |   |   |   |   |   |   |   |--- value: [15.32]
+|   |   |   |   |   |   |   |--- doy_cos >  0.84
+|   |   |   |   |   |   |   |   |--- value: [13.62]
+|   |   |   |   |   |   |--- temperature_2m_max_lag3 >  12.20
+|   |   |   |   |   |   |   |--- precipitation_sum_lag3 <= 1.95
+|   |   |   |   |   |   |   |   |--- value: [10.85]
+|   |   |   |   |   |   |   |--- precipitation_sum_lag3 >  1.95
+|   |   |   |   |   |   |   |   |--- value: [13.46]
+|   |   |   |   |--- windspeed_10m_max_lag2 >  21.65
+|   |   |   |   |   |--- windspeed_10m_max_lag3 <= 21.85
+|   |   |   |   |   |   |--- precipitation_sum_lag1 <= 4.90
+|   |   |   |   |   |   |   |--- windspeed_10m_max_lag3 <= 18.45
+|   |   |   |   |   |   |   |   |--- value: [11.90]
+|   |   |   |   |   |   |   |--- windspeed_10m_max_lag3 >  18.45
+|   |   |   |   |   |   |   |   |--- value: [10.70]
+|   |   |   |   |   |   |--- precipitation_sum_lag1 >  4.90
+|   |   |   |   |   |   |   |--- relative_humidity_2m_mean_lag1 <= 83.50
+|   |   |   |   |   |   |   |   |--- value: [7.90]
+|   |   |   |   |   |   |   |--- relative_humidity_2m_mean_lag1 >  83.50
+|   |   |   |   |   |   |   |   |--- value: [9.60]
+|   |   |   |   |   |--- windspeed_10m_max_lag3 >  21.85
+|   |   |   |   |   |   |--- windspeed_10m_max_lag1 <= 33.80
+|   |   |   |   |   |   |   |--- relative_humidity_2m_mean_lag3 <= 82.00
+|   |   |   |   |   |   |   |   |--- value: [13.31]
+|   |   |   |   |   |   |   |--- relative_humidity_2m_mean_lag3 >  82.00
+|   |   |   |   |   |   |   |   |--- value: [12.18]
+|   |   |   |   |   |   |--- windspeed_10m_max_lag1 >  33.80
+|   |   |   |   |   |   |   |--- value: [16.30]
 |   |   |   |--- temperature_2m_max_lag1 >  14.35
-|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- windspeed_10m_max_lag3 <= 9.25
+|   |   |   |   |   |--- doy_cos <= 0.21
+|   |   |   |   |   |   |--- value: [18.20]
+|   |   |   |   |   |--- doy_cos >  0.21
+|   |   |   |   |   |   |--- value: [21.40]
+|   |   |   |   |--- windspeed_10m_max_lag3 >  9.25
+|   |   |   |   |   |--- doy_cos <= -0.15
+|   |   |   |   |   |   |--- windspeed_10m_max_lag1 <= 16.60
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag3 <= 1006.65
+|   |   |   |   |   |   |   |   |--- value: [17.34]
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag3 >  1006.65
+|   |   |   |   |   |   |   |   |--- value: [18.40]
+|   |   |   |   |   |   |--- windspeed_10m_max_lag1 >  16.60
+|   |   |   |   |   |   |   |--- temp_max_trend <= -4.75
+|   |   |   |   |   |   |   |   |--- value: [14.00]
+|   |   |   |   |   |   |   |--- temp_max_trend >  -4.75
+|   |   |   |   |   |   |   |   |--- value: [15.29]
+|   |   |   |   |   |--- doy_cos >  -0.15
+|   |   |   |   |   |   |--- windspeed_10m_max_lag1 <= 8.40
+|   |   |   |   |   |   |   |--- doy_cos <= 0.30
+|   |   |   |   |   |   |   |   |--- value: [12.60]
+|   |   |   |   |   |   |   |--- doy_cos >  0.30
+|   |   |   |   |   |   |   |   |--- value: [11.80]
+|   |   |   |   |   |   |--- windspeed_10m_max_lag1 >  8.40
+|   |   |   |   |   |   |   |--- relative_humidity_2m_mean_lag3 <= 74.50
+|   |   |   |   |   |   |   |   |--- value: [11.60]
+|   |   |   |   |   |   |   |--- relative_humidity_2m_mean_lag3 >  74.50
+|   |   |   |   |   |   |   |   |--- value: [15.04]
 |--- temperature_2m_max_lag1 >  15.85
 |   |--- temperature_2m_max_lag1 <= 21.35
 |   |   |--- temperature_2m_max_lag1 <= 18.85
 |   |   |   |--- doy_cos <= -0.40
-|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- doy_sin <= -0.32
+|   |   |   |   |   |--- temperature_2m_min_lag2 <= 14.45
+|   |   |   |   |   |   |--- value: [24.40]
+|   |   |   |   |   |--- temperature_2m_min_lag2 >  14.45
+|   |   |   |   |   |   |--- value: [23.00]
+|   |   |   |   |--- doy_sin >  -0.32
+|   |   |   |   |   |--- relative_humidity_2m_mean_lag2 <= 75.50
+|   |   |   |   |   |   |--- temperature_2m_max_lag1 <= 16.35
+|   |   |   |   |   |   |   |--- value: [16.70]
+|   |   |   |   |   |   |--- temperature_2m_max_lag1 >  16.35
+|   |   |   |   |   |   |   |--- temp_max_trend <= 0.95
+|   |   |   |   |   |   |   |   |--- value: [19.72]
+|   |   |   |   |   |   |   |--- temp_max_trend >  0.95
+|   |   |   |   |   |   |   |   |--- value: [18.27]
+|   |   |   |   |   |--- relative_humidity_2m_mean_lag2 >  75.50
+|   |   |   |   |   |   |--- windspeed_10m_max_lag1 <= 17.65
+|   |   |   |   |   |   |   |--- precipitation_sum_lag2 <= 1.35
+|   |   |   |   |   |   |   |   |--- value: [19.35]
+|   |   |   |   |   |   |   |--- precipitation_sum_lag2 >  1.35
+|   |   |   |   |   |   |   |   |--- value: [18.67]
+|   |   |   |   |   |   |--- windspeed_10m_max_lag1 >  17.65
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag3 <= 20.35
+|   |   |   |   |   |   |   |   |--- value: [16.65]
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag3 >  20.35
+|   |   |   |   |   |   |   |   |--- value: [17.77]
 |   |   |   |--- doy_cos >  -0.40
-|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- surface_pressure_mean_lag2 <= 1010.95
+|   |   |   |   |   |--- temperature_2m_min_lag3 <= 12.45
+|   |   |   |   |   |   |--- surface_pressure_mean_lag3 <= 1008.55
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag1 <= 996.25
+|   |   |   |   |   |   |   |   |--- value: [15.43]
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag1 >  996.25
+|   |   |   |   |   |   |   |   |--- value: [14.39]
+|   |   |   |   |   |   |--- surface_pressure_mean_lag3 >  1008.55
+|   |   |   |   |   |   |   |--- windspeed_10m_max_lag3 <= 10.80
+|   |   |   |   |   |   |   |   |--- value: [15.05]
+|   |   |   |   |   |   |   |--- windspeed_10m_max_lag3 >  10.80
+|   |   |   |   |   |   |   |   |--- value: [16.35]
+|   |   |   |   |   |--- temperature_2m_min_lag3 >  12.45
+|   |   |   |   |   |   |--- temp_max_trend <= -1.10
+|   |   |   |   |   |   |   |--- precipitation_sum_lag2 <= 0.65
+|   |   |   |   |   |   |   |   |--- value: [15.06]
+|   |   |   |   |   |   |   |--- precipitation_sum_lag2 >  0.65
+|   |   |   |   |   |   |   |   |--- value: [16.72]
+|   |   |   |   |   |   |--- temp_max_trend >  -1.10
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag1 <= 17.15
+|   |   |   |   |   |   |   |   |--- value: [18.70]
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag1 >  17.15
+|   |   |   |   |   |   |   |   |--- value: [19.90]
+|   |   |   |   |--- surface_pressure_mean_lag2 >  1010.95
+|   |   |   |   |   |--- surface_pressure_mean_lag2 <= 1018.85
+|   |   |   |   |   |   |--- doy_cos <= 0.37
+|   |   |   |   |   |   |   |--- windspeed_10m_max_lag2 <= 22.30
+|   |   |   |   |   |   |   |   |--- value: [18.34]
+|   |   |   |   |   |   |   |--- windspeed_10m_max_lag2 >  22.30
+|   |   |   |   |   |   |   |   |--- value: [20.02]
+|   |   |   |   |   |   |--- doy_cos >  0.37
+|   |   |   |   |   |   |   |--- temp_max_trend <= -0.55
+|   |   |   |   |   |   |   |   |--- value: [16.40]
+|   |   |   |   |   |   |   |--- temp_max_trend >  -0.55
+|   |   |   |   |   |   |   |   |--- value: [16.97]
+|   |   |   |   |   |--- surface_pressure_mean_lag2 >  1018.85
+|   |   |   |   |   |   |--- temperature_2m_max_lag3 <= 19.05
+|   |   |   |   |   |   |   |--- windspeed_10m_max_lag3 <= 17.45
+|   |   |   |   |   |   |   |   |--- value: [16.60]
+|   |   |   |   |   |   |   |--- windspeed_10m_max_lag3 >  17.45
+|   |   |   |   |   |   |   |   |--- value: [18.80]
+|   |   |   |   |   |   |--- temperature_2m_max_lag3 >  19.05
+|   |   |   |   |   |   |   |--- value: [10.70]
 |   |   |--- temperature_2m_max_lag1 >  18.85
 |   |   |   |--- temp_max_trend <= 3.95
-|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- pressure_trend <= -2.50
+|   |   |   |   |   |--- windspeed_10m_max_lag2 <= 17.25
+|   |   |   |   |   |   |--- temperature_2m_min_lag3 <= 15.65
+|   |   |   |   |   |   |   |--- temp_max_trend <= 0.05
+|   |   |   |   |   |   |   |   |--- value: [18.72]
+|   |   |   |   |   |   |   |--- temp_max_trend >  0.05
+|   |   |   |   |   |   |   |   |--- value: [20.00]
+|   |   |   |   |   |   |--- temperature_2m_min_lag3 >  15.65
+|   |   |   |   |   |   |   |--- relative_humidity_2m_mean_lag2 <= 59.50
+|   |   |   |   |   |   |   |   |--- value: [22.10]
+|   |   |   |   |   |   |   |--- relative_humidity_2m_mean_lag2 >  59.50
+|   |   |   |   |   |   |   |   |--- value: [20.40]
+|   |   |   |   |   |--- windspeed_10m_max_lag2 >  17.25
+|   |   |   |   |   |   |--- windspeed_10m_max_lag2 <= 18.15
+|   |   |   |   |   |   |   |--- value: [13.80]
+|   |   |   |   |   |   |--- windspeed_10m_max_lag2 >  18.15
+|   |   |   |   |   |   |   |--- doy_cos <= -0.61
+|   |   |   |   |   |   |   |   |--- value: [17.97]
+|   |   |   |   |   |   |   |--- doy_cos >  -0.61
+|   |   |   |   |   |   |   |   |--- value: [16.30]
+|   |   |   |   |--- pressure_trend >  -2.50
+|   |   |   |   |   |--- surface_pressure_mean_lag3 <= 1013.25
+|   |   |   |   |   |   |--- temperature_2m_max_lag3 <= 23.45
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag3 <= 1003.55
+|   |   |   |   |   |   |   |   |--- value: [22.08]
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag3 >  1003.55
+|   |   |   |   |   |   |   |   |--- value: [19.55]
+|   |   |   |   |   |   |--- temperature_2m_max_lag3 >  23.45
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag3 <= 1010.95
+|   |   |   |   |   |   |   |   |--- value: [24.10]
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag3 >  1010.95
+|   |   |   |   |   |   |   |   |--- value: [20.58]
+|   |   |   |   |   |--- surface_pressure_mean_lag3 >  1013.25
+|   |   |   |   |   |   |--- doy_sin <= -1.00
+|   |   |   |   |   |   |   |--- temperature_2m_min_lag2 <= 8.60
+|   |   |   |   |   |   |   |   |--- value: [18.00]
+|   |   |   |   |   |   |   |--- temperature_2m_min_lag2 >  8.60
+|   |   |   |   |   |   |   |   |--- value: [17.70]
+|   |   |   |   |   |   |--- doy_sin >  -1.00
+|   |   |   |   |   |   |   |--- temperature_2m_min_lag1 <= 10.00
+|   |   |   |   |   |   |   |   |--- value: [22.27]
+|   |   |   |   |   |   |   |--- temperature_2m_min_lag1 >  10.00
+|   |   |   |   |   |   |   |   |--- value: [24.19]
 |   |   |   |--- temp_max_trend >  3.95
 |   |   |   |   |--- value: [12.40]
 |   |--- temperature_2m_max_lag1 >  21.35
 |   |   |--- temperature_2m_max_lag1 <= 27.30
 |   |   |   |--- surface_pressure_mean_lag1 <= 1013.35
-|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- pressure_trend <= -1.30
+|   |   |   |   |   |--- temperature_2m_max_lag3 <= 25.35
+|   |   |   |   |   |   |--- windspeed_10m_max_lag2 <= 27.60
+|   |   |   |   |   |   |   |--- temperature_2m_min_lag1 <= 17.00
+|   |   |   |   |   |   |   |   |--- value: [20.63]
+|   |   |   |   |   |   |   |--- temperature_2m_min_lag1 >  17.00
+|   |   |   |   |   |   |   |   |--- value: [18.97]
+|   |   |   |   |   |   |--- windspeed_10m_max_lag2 >  27.60
+|   |   |   |   |   |   |   |--- value: [17.10]
+|   |   |   |   |   |--- temperature_2m_max_lag3 >  25.35
+|   |   |   |   |   |   |--- temperature_2m_max_lag1 <= 26.65
+|   |   |   |   |   |   |   |--- doy_cos <= -0.50
+|   |   |   |   |   |   |   |   |--- value: [22.20]
+|   |   |   |   |   |   |   |--- doy_cos >  -0.50
+|   |   |   |   |   |   |   |   |--- value: [20.40]
+|   |   |   |   |   |   |--- temperature_2m_max_lag1 >  26.65
+|   |   |   |   |   |   |   |--- doy_cos <= -0.75
+|   |   |   |   |   |   |   |   |--- value: [23.30]
+|   |   |   |   |   |   |   |--- doy_cos >  -0.75
+|   |   |   |   |   |   |   |   |--- value: [23.60]
+|   |   |   |   |--- pressure_trend >  -1.30
+|   |   |   |   |   |--- relative_humidity_2m_mean_lag2 <= 61.50
+|   |   |   |   |   |   |--- temperature_2m_max_lag2 <= 20.40
+|   |   |   |   |   |   |   |--- value: [24.60]
+|   |   |   |   |   |   |--- temperature_2m_max_lag2 >  20.40
+|   |   |   |   |   |   |   |--- value: [27.20]
+|   |   |   |   |   |--- relative_humidity_2m_mean_lag2 >  61.50
+|   |   |   |   |   |   |--- temp_max_trend <= 3.45
+|   |   |   |   |   |   |   |--- windspeed_10m_max_lag1 <= 10.35
+|   |   |   |   |   |   |   |   |--- value: [26.90]
+|   |   |   |   |   |   |   |--- windspeed_10m_max_lag1 >  10.35
+|   |   |   |   |   |   |   |   |--- value: [22.45]
+|   |   |   |   |   |   |--- temp_max_trend >  3.45
+|   |   |   |   |   |   |   |--- value: [17.80]
 |   |   |   |--- surface_pressure_mean_lag1 >  1013.35
-|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- pressure_trend <= -4.35
+|   |   |   |   |   |--- windspeed_10m_max_lag1 <= 16.55
+|   |   |   |   |   |   |--- relative_humidity_2m_mean_lag1 <= 65.50
+|   |   |   |   |   |   |   |--- value: [21.80]
+|   |   |   |   |   |   |--- relative_humidity_2m_mean_lag1 >  65.50
+|   |   |   |   |   |   |   |--- value: [21.70]
+|   |   |   |   |   |--- windspeed_10m_max_lag1 >  16.55
+|   |   |   |   |   |   |--- value: [19.70]
+|   |   |   |   |--- pressure_trend >  -4.35
+|   |   |   |   |   |--- windspeed_10m_max_lag3 <= 17.85
+|   |   |   |   |   |   |--- temperature_2m_max_lag1 <= 26.00
+|   |   |   |   |   |   |   |--- doy_sin <= -0.46
+|   |   |   |   |   |   |   |   |--- value: [25.79]
+|   |   |   |   |   |   |   |--- doy_sin >  -0.46
+|   |   |   |   |   |   |   |   |--- value: [23.81]
+|   |   |   |   |   |   |--- temperature_2m_max_lag1 >  26.00
+|   |   |   |   |   |   |   |--- pressure_trend <= 0.50
+|   |   |   |   |   |   |   |   |--- value: [29.77]
+|   |   |   |   |   |   |   |--- pressure_trend >  0.50
+|   |   |   |   |   |   |   |   |--- value: [27.70]
+|   |   |   |   |   |--- windspeed_10m_max_lag3 >  17.85
+|   |   |   |   |   |   |--- precipitation_sum_lag3 <= 2.60
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag1 <= 24.45
+|   |   |   |   |   |   |   |   |--- value: [30.40]
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag1 >  24.45
+|   |   |   |   |   |   |   |   |--- value: [27.87]
+|   |   |   |   |   |   |--- precipitation_sum_lag3 >  2.60
+|   |   |   |   |   |   |   |--- doy_cos <= -0.93
+|   |   |   |   |   |   |   |   |--- value: [27.48]
+|   |   |   |   |   |   |   |--- doy_cos >  -0.93
+|   |   |   |   |   |   |   |   |--- value: [25.65]
 |   |   |--- temperature_2m_max_lag1 >  27.30
 |   |   |   |--- precipitation_sum_lag1 <= 0.10
-|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- windspeed_10m_max_lag2 <= 9.05
+|   |   |   |   |   |--- relative_humidity_2m_mean_lag3 <= 69.50
+|   |   |   |   |   |   |--- surface_pressure_mean_lag1 <= 1010.90
+|   |   |   |   |   |   |   |--- value: [26.70]
+|   |   |   |   |   |   |--- surface_pressure_mean_lag1 >  1010.90
+|   |   |   |   |   |   |   |--- temperature_2m_min_lag3 <= 15.70
+|   |   |   |   |   |   |   |   |--- value: [29.10]
+|   |   |   |   |   |   |   |--- temperature_2m_min_lag3 >  15.70
+|   |   |   |   |   |   |   |   |--- value: [31.20]
+|   |   |   |   |   |--- relative_humidity_2m_mean_lag3 >  69.50
+|   |   |   |   |   |   |--- windspeed_10m_max_lag1 <= 11.95
+|   |   |   |   |   |   |   |--- value: [22.50]
+|   |   |   |   |   |   |--- windspeed_10m_max_lag1 >  11.95
+|   |   |   |   |   |   |   |--- windspeed_10m_max_lag1 <= 15.35
+|   |   |   |   |   |   |   |   |--- value: [23.90]
+|   |   |   |   |   |   |   |--- windspeed_10m_max_lag1 >  15.35
+|   |   |   |   |   |   |   |   |--- value: [23.60]
+|   |   |   |   |--- windspeed_10m_max_lag2 >  9.05
+|   |   |   |   |   |--- temp_max_trend <= 2.80
+|   |   |   |   |   |   |--- relative_humidity_2m_mean_lag3 <= 66.00
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag3 <= 1016.65
+|   |   |   |   |   |   |   |   |--- value: [27.58]
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag3 >  1016.65
+|   |   |   |   |   |   |   |   |--- value: [30.17]
+|   |   |   |   |   |   |--- relative_humidity_2m_mean_lag3 >  66.00
+|   |   |   |   |   |   |   |--- windspeed_10m_max_lag3 <= 17.10
+|   |   |   |   |   |   |   |   |--- value: [32.00]
+|   |   |   |   |   |   |   |--- windspeed_10m_max_lag3 >  17.10
+|   |   |   |   |   |   |   |   |--- value: [30.10]
+|   |   |   |   |   |--- temp_max_trend >  2.80
+|   |   |   |   |   |   |--- relative_humidity_2m_mean_lag1 <= 60.50
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag3 <= 29.40
+|   |   |   |   |   |   |   |   |--- value: [35.57]
+|   |   |   |   |   |   |   |--- temperature_2m_max_lag3 >  29.40
+|   |   |   |   |   |   |   |   |--- value: [33.50]
+|   |   |   |   |   |   |--- relative_humidity_2m_mean_lag1 >  60.50
+|   |   |   |   |   |   |   |--- precipitation_sum_lag3 <= 7.20
+|   |   |   |   |   |   |   |   |--- value: [31.37]
+|   |   |   |   |   |   |   |--- precipitation_sum_lag3 >  7.20
+|   |   |   |   |   |   |   |   |--- value: [33.80]
 |   |   |   |--- precipitation_sum_lag1 >  0.10
-|   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- temperature_2m_min_lag1 <= 19.00
+|   |   |   |   |   |--- temperature_2m_min_lag1 <= 18.20
+|   |   |   |   |   |   |--- pressure_trend <= -3.90
+|   |   |   |   |   |   |   |--- value: [23.40]
+|   |   |   |   |   |   |--- pressure_trend >  -3.90
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag1 <= 1005.80
+|   |   |   |   |   |   |   |   |--- value: [21.30]
+|   |   |   |   |   |   |   |--- surface_pressure_mean_lag1 >  1005.80
+|   |   |   |   |   |   |   |   |--- value: [22.20]
+|   |   |   |   |   |--- temperature_2m_min_lag1 >  18.20
+|   |   |   |   |   |   |--- doy_cos <= -0.70
+|   |   |   |   |   |   |   |--- temperature_2m_min_lag3 <= 16.10
+|   |   |   |   |   |   |   |   |--- value: [25.10]
+|   |   |   |   |   |   |   |--- temperature_2m_min_lag3 >  16.10
+|   |   |   |   |   |   |   |   |--- value: [24.90]
+|   |   |   |   |   |   |--- doy_cos >  -0.70
+|   |   |   |   |   |   |   |--- value: [24.40]
+|   |   |   |   |--- temperature_2m_min_lag1 >  19.00
+|   |   |   |   |   |--- relative_humidity_2m_mean_lag1 <= 59.50
+|   |   |   |   |   |   |--- value: [30.80]
+|   |   |   |   |   |--- relative_humidity_2m_mean_lag1 >  59.50
+|   |   |   |   |   |   |--- surface_pressure_mean_lag2 <= 1010.05
+|   |   |   |   |   |   |   |--- value: [27.20]
+|   |   |   |   |   |   |--- surface_pressure_mean_lag2 >  1010.05
+|   |   |   |   |   |   |   |--- doy_sin <= -0.23
+|   |   |   |   |   |   |   |   |--- value: [28.70]
+|   |   |   |   |   |   |   |--- doy_sin >  -0.23
+|   |   |   |   |   |   |   |   |--- value: [28.40]

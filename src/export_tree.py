@@ -16,14 +16,27 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 
+def _count_leaves_at_depth(sk_tree, max_depth):
+    """How many boxes will appear on the bottom row when plot_tree stops at max_depth."""
+    def rec(node, depth):
+        left, right = sk_tree.children_left[node], sk_tree.children_right[node]
+        is_leaf = left == -1
+        if depth == max_depth or is_leaf:
+            return 1
+        return rec(left, depth + 1) + rec(right, depth + 1)
+    return rec(0, 0)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Export one tree from a trained forest")
     parser.add_argument("--model", type=str, default="../models/temp_model.joblib",
                          help="Path to a .joblib model bundle (temp_model or rain_model)")
     parser.add_argument("--tree-index", type=int, default=0,
                          help="Which tree in the forest to export (0 to n_estimators-1)")
-    parser.add_argument("--max-depth", type=int, default=3,
-                         help="How many levels deep to show (trees can be huge; 3 keeps it readable)")
+    parser.add_argument("--max-depth", type=int, default=8,
+                         help="How many levels deep to show. Trees in this project are trained "
+                              "with max_depth=8, so 8 shows the FULL tree including leaf values. "
+                              "Use a smaller number (e.g. 3) for a quicker, more zoomed-in view.")
     parser.add_argument("--out-prefix", type=str, default="../logs/tree_trace",
                          help="Output file prefix for the .txt and .png files")
     args = parser.parse_args()
@@ -43,12 +56,23 @@ def main():
     print(f"Text trace saved to {txt_path}")
 
     # 2. Visual diagram
-    fig, ax = plt.subplots(figsize=(16, 8))
+    # Deeper trees have exponentially more leaf boxes on the bottom row, so a
+    # fixed image size would squeeze everything unreadably small. Instead we
+    # count how many leaves actually appear at the requested depth and scale
+    # the figure (and font/dpi) to match.
+    n_leaves = _count_leaves_at_depth(one_tree.tree_, args.max_depth)
+    fig_width = max(16, n_leaves * 1.3)
+    fig_height = max(8, (args.max_depth + 1) * 2.2)
+    dpi = 150 if fig_width <= 40 else 100  # keep huge trees from becoming enormous files
+    font_size = max(5, 9 - args.max_depth // 2)
+
+    fig, ax = plt.subplots(figsize=(fig_width, fig_height))
     plot_tree(one_tree, feature_names=feature_names, filled=True,
-              max_depth=args.max_depth, fontsize=8, ax=ax, rounded=True)
+              max_depth=args.max_depth, fontsize=font_size, ax=ax, rounded=True)
     png_path = f"{args.out_prefix}_{args.tree_index}.png"
-    plt.savefig(png_path, dpi=150, bbox_inches="tight")
-    print(f"Diagram saved to {png_path}")
+    plt.savefig(png_path, dpi=dpi, bbox_inches="tight")
+    print(f"Diagram saved to {png_path} ({n_leaves} leaf boxes at depth {args.max_depth}, "
+          f"image size {fig_width:.0f}x{fig_height:.0f} inches)")
 
 
 if __name__ == "__main__":
